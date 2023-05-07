@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans&family=Open+Sans:ital,wght@1,700&display=swap');
+
+.about{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    justify-content: center;
+}
+.container{
+    position: relative;   
+    width: 400px;
+    background: white;
+    padding: 50px 35px 40px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+header{
+    font-size: 40px;
+    margin-bottom: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.input-field, form .button{
+    margin: 25px 0;
+    position: relative;
+    height: 47px;
+    width: 100%;
+}
+.input-field h2{
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right,#00dbde,#fc00ff,#00dbde,#fc00ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.input-field input{
+    height: 100%;
+    width: 100%;
+    border: 1.5px solid silver;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+    transition: 0.4s;
+}
+input:focus{
+    border: 1.5px solid #1da1f2;
+}
+.input-field label, span.show, span.show2{
+    position: absolute;
+    top: 50%;    
+    transform: translateY(-50%);    
+}
+.input-field label{
+    left: 15px;
+    pointer-events: none;
+    color: gray;
+    font-size: 18px;
+    transition: 0.4s;
+}
+span.show, span.show2{
+    right: 18px;
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    visibility: hidden;
+    font-family: 'Open Sans', sans-serif;
+}
+input:valid ~ span.show, input:valid ~ span.show2{
+    visibility: visible;
+}
+input:focus ~ label,
+input:valid ~ label{
+    transform: translateY(-33px);
+    padding: 0 5px;
+    background: white;
+    font-size: 16px;
+    color: #1da1f2;
+}
+form .button{
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 0;
+}
+.button .inner{
+    position: absolute;
+    height: 100%;
+    width: 300%;
+    left: -100%;
+    z-index: -1;
+    transition: all 0.4s;
+    background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#00dbde,#fc00ff);
+}
+.button:hover .inner{
+    left: 0;   
+}
+.button button{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+.signup{
+    margin-top: 40px;
+    font-family: 'Noto Sans', sans-serif;
+}
+.recovery{
+    margin-top: -15px;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Noto Sans', sans-serif;
+}
+.signup a, .recovery a{
+    color: #3498db;
+    text-decoration: none;
+}
+.signup a:hover, .recovery a:hover{
+    text-decoration: underline;
+}
+
+/*===========================================================================================================
+                                                    History page
+=============================================================================================================*/
+
+.container4{
+    position: relative;   
+    width: 92%;
+    max-height: 750px;
+    background: white;
+    padding: 40px 30px;    
+    margin-top: 47px;
+    border-radius: 5px;
+}
+.container4 header{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+form .contents{
+    background: white;
+    width: 100%;
+    min-height: 300px;
+    max-height: 550px;
+    overflow-y: auto;
+}
+form .contents::-webkit-scrollbar{
+    width: 0px;
+}
+form .contents table{
+    width: 100%;
+    margin: auto;
+}
+.contents table tr th{
+    font-size: 22px;
+    padding: 20px 0;
+    border-bottom: 1px solid grey;
+}
+.contents table tr td{
+    font-size: 18px;
+    word-break: break-word;
+    padding: 10px 3px;
+}
+form .hbutton{
+    height: 45px;
+    margin-top: 18px;
+    margin-bottom: -27px;
+    margin-left: calc(100% - 61%);
+    width: 25%;
+}
+form .hbutton input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;    
+    background: -webkit-linear-gradient(left,#00dbde,#fc00ff);
+    transition: all 0.5s ease;
+}
+form .hbutton input:hover{
+    background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#00dbde);
+    transition: all 0.5s ease;
+}
+
+/*===========================================================================================================
+                                                    Profile pic page
+=============================================================================================================*/
+
+
+.container5{
+    position: relative;   
+    width: 400px;
+    height: 410px;
+    background: white;
+    padding: 40px 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.container5 header{
+    font-size: 42px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container5 form .user-img{
+    width: 100%;
+    height: 100%;
+}
+form .user-img #photo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+form .user-img #file{
+    display: none;
+}
+form .user-img #uploadbtn{
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    padding: 2px 0 1px;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateX(-90%);
+    margin-top: 112px;
+    background-color: rgb(173, 172, 172, 0.801);
+    box-shadow: 2px 4px 4px rgb(0, 0, 0,0.644);
+}
+form .user-img #uploadbtn img{
+    height: 30px;
+    width: 30px;
+}
+form .cbutton{
+    height: 45px;
+    margin-top: 40px;
+    width: 130px;
+    margin-left: calc(100% - 70%);
+}
+form .cbutton input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;  
+    border-radius: 10px;
+    background: -webkit-linear-gradient(left,#00dbde,#fc00ff);
+    transition: all 0.5s ease;
+}
+form .cbutton input:hover{
+    background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#fc00ff);
+    transition: all 0.5s ease;
+}
+
+
+/*  ===============================================================================================
+                                            Index Page
+===================================================================================================*/
+
+.icontainer{
+    position: relative;   
+    width: 85%;
+    height: 520px;
+    background: white;
+    padding: 40px 30px;    
+    margin-top: 15px;
+    border-radius: 10px;
+}
+.icontainer .row{
+    width: 100%;
+    height: 100%;
+    display: flex; 
+}
+.icontainer .row .col-sm-1{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    padding: 30px 20px;
+}
+.icontainer .row .col-sm-2{
+    width: 50%;
+    height: 100%;
+}
+.icontainer .row .col-sm-1 h1{
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.icontainer .row .col-sm-1 p{
+    text-align: justify;
+    margin: 15px 0;
+    font-size: 18px;
+}
+.icontainer .row .col-sm-1 .btn{
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    margin: 10px 0;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    border-radius: 40px;
+    background: linear-gradient(90deg,#0162c8,#55e7fc);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.icontainer .row .col-sm-1 .btn:hover,
+.icontainer .row .col-sm-1 .btn:focus,
+.icontainer .row .col-sm-1 .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+}
+.icontainer .row .col-sm-2 img{
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*  Popup Window*/
+
+
+.popup .overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+.popup .contentd{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: white;
+    width: 480px;
+    height: auto;
+    padding: 30px;
+    z-index: 2;
+    text-align: center;
+    border-radius: 10px;
+}
+.popup .contentd p{
+    text-align: justify;
+    padding-top: 20px;
+    text-indent: 2em;
+}
+.popup .close-btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+.popup .close-btn img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.popup.active .overlay{
+    display: block;
+}
+.popup.active .contentd{
+    transition: all 300ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
