@@ -1,7 +1,7 @@
 
 
 create database chat_system ;
-
+use chat_system;
 
 CREATE TABLE userreg (
   firstname varchar(50) NOT NULL,

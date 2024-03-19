@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Noto+Sans&family=Open+Sans:ital,wght@1,700&display=swap');
+
+.about{
+    display: flex;
+    height: 100%;
+    padding: 0 10px 50px;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    max-width: 800px;
+    width: 100%;
+    height: 100%;
+    background: white;
+    padding: 25px 30px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    border-radius: 5px;
+}
+.container .title,
+.container2 .title{
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.container form .user-details,
+.container2 form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+form .user-details .input-box{
+    margin: 15px 0;
+    width: calc(100% / 2 - 20px);
+    height: 47px;
+}
+.user-details .input-box input,
+.user-details .input-box2 input{
+    height: 100%;
+    width: 100%;
+    border: 1.5px solid silver;
+    padding-left: 15px;
+    outline: none;
+    font-size: 19px;
+    transition: 0.4s;
+}
+.input-box input:focus,
+.input-box2 input:focus{
+    border: 1.5px solid #1da1f2;
+}
+.input-box label, span.show, span.show2,
+.input-box2 label{
+    position: relative;
+    top: -70%;
+    transform: translateY(-50%);
+}
+.input-box label,
+.input-box2 label{
+    left: 15px;
+    pointer-events: none;
+    color: gray;
+    font-size: 18px;
+    transition: all 0.4s;
+}
+.error{
+    color: red;
+    text-align: left;
+    display: flex;
+    margin: -20px 0 0 10px;
+}
+span.show{
+    left: 60%;    
+}
+span.show2{
+    left: 65%;    
+}
+span.show, span.show2{
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    visibility: hidden;
+    font-family: 'Open Sans', sans-serif;   
+}
+.input-box input:valid ~ span.show,
+.input-box input:valid ~ span.show2,
+.input-box2 input:valid ~ span.show2{
+    visibility: visible;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label,
+.input-box2 input:focus ~ label,
+.input-box2 input:valid ~ label{
+    top: -55px;
+    padding: 0 5px;
+    background: white;
+    font-size: 16px;
+    color: #1da1f2;
+}
+
+
+.select-menu{
+    width: calc(50% - 20px);
+    cursor: pointer;
+    position: relative;
+}
+.select-menu2{
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+.select{
+    background: white;
+    padding: 12px;
+    color: gray;
+    margin: 15px 0;
+    border: 1.5px solid silver;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.chevron-up{
+    display: none;
+}
+.chevron-down.up{
+    display: none;
+}
+.chevron-up.down{
+    display: block;
+}
+.options-list{
+    position: absolute;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1.5px solid silver;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: -16px;
+    padding: 0 12px;
+    max-height: 150px;
+    overflow-y: auto;
+    transition:all 0.4s linear 0.2s;
+    display: none;
+}
+.options-list::-webkit-scrollbar,
+.options-list2::-webkit-scrollbar{
+    width: 0;
+}
+.options-list.active,
+.options-list2.active{
+    display: block;
+}
+.option{
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 5px;
+    transition: 0.3s ease-in-out;
+}
+.option::after{
+    content: "\a";
+    white-space: pre;
+}
+.option:hover,
+.option.selected{
+    color: #00a8ff;
+}
+
+
+
+
+
+
+
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 10px 0;
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+.gender-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+form input[type="radio"]{
+    display: none;
+}
+form .button{
+    height: 45px;
+    margin: 35px 0 20px;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;    
+    background: -webkit-linear-gradient(left,#00dbde,#fc00ff);
+    transition: all 0.5s ease;
+}
+form .button input:hover{
+    background: -webkit-linear-gradient(right,#00dbde,#fc00ff,#00dbde);
+    transition: all 0.5s ease;
+}
+
+
+
+
+.container2{
+    max-width: 400px;
+    width: 100%;
+    background: white;
+    padding: 25px 30px;
+    margin-top: 100px;
+    margin-bottom: auto;
+    border-radius: 5px;
+}
+
+form .user-details .input-box2{
+    margin: 15px 0;
+    width: 100%;;
+    height: 47px;
+}
+.options-list2{
+    position: relative;
+    width: 100%;
+    background-color: #f9f9f9;
+    border: 1.5px solid silver;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-top: -16px;
+    padding: 0 12px;
+    max-height: 150px;
+    overflow-y: auto;
+    transition:all 0.4s linear 0.2s;
+    display: none;
+}
+.container2 h2{
+    font-size: 30px;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(to right,#00dbde,#fc00ff,#00dbde,#fc00ff);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+@media(max-width: 900px){
+    .container{
+        max-width: 100%;
+    }
+    form .user-details .input-box{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .gender-details .category{
+        width: 100%;
+    }
+    .container form .user-details,
+    .container2 form .user-details{
+        max-height: 300px;
+        overflow: scroll;
+        border-bottom: 1px solid silver;
+        margin-bottom: 10px
+    }
+    .user-details::-webkit-scrollbar{
+        width: 0;
+    }
+    .select-menu,
+    .select-menu2{
+        width: 100%;
+    }
+    .options-list{
+        position: relative;
+    }
+}
