@@ -1,3 +1,3 @@
 # Chatting_System_jsp
 
-checking connection (Connected)
+Using Java (JSP), mysql
