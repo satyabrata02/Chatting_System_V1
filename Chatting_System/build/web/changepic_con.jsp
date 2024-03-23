@@ -9,7 +9,8 @@
 <%
     String PHONENO=(String)session.getAttribute("phoneno");
     String filename = "";
-    MultipartRequest m = new MultipartRequest(request,"E:/Web Project/Chatting System/Chatting_System/web/profile_picture",8*1024*1024);
+//    String absolutePath = getServletContext().getRealPath("/profile_picture");
+    MultipartRequest m = new MultipartRequest(request,"D:/Chatting_System_jsp/Chatting_System/web/profile_picture",8*1024*1024);
     Enumeration files = m.getFileNames();
     
     while(files.hasMoreElements()){

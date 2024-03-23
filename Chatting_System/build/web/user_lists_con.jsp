@@ -15,9 +15,7 @@
     out.println(TOUSER);
 %>
 <html>
-    <head>
-        <title></title>
-    </head>
+    <head></head>
     <body>
         <c:set scope="session" var="UPH_NO" value="${param.phoneno}" /><br/>
         <c:out value="${UPH_NO}" /><br/>        <%--    other number    --%>
