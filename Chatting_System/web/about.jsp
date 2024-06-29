@@ -42,10 +42,10 @@
                         <p><img src="pictures/call.png" height="15px" width="15px">(+91) 6371202542</p>
                         <p><img src="pictures/mail.png" height="15px" width="15px">pandasatyabrata56@gmail.com</p>
                         <div class="social-icons">
-                            <a href="https://www.facebook.com/satyabrata.panda.3956690?mibextid=ZbWKwL"><img src="pictures/logo-facebook.png" height="35px" width="35px"></a>
-                            <a href="https://www.instagram.com/satya.brata_panda/"><img src="pictures/logo-instagram.png" height="35px" width="35px"></a>
-                            <a href="https://www.linkedin.com/in/satyabrata-panda-a462b5220"><img src="pictures/logo-linkedin.png" height="35px" width="35px"></a>
-                            <a href="https://twitter.com/__satyabrata__?t=-1RO9lrjYo8ZZPWj_jmoNg&s=08"><img src="pictures/logo-twitter.png" height="35px" width="35px"></a>
+                            <a href="https://www.facebook.com/satyabrata.panda.3956690?mibextid=ZbWKwL" target="_blank"><img src="pictures/logo-facebook.png" height="35px" width="35px"></a>
+                            <a href="https://www.instagram.com/satya.brata_panda/" target="_blank"><img src="pictures/logo-instagram.png" height="35px" width="35px"></a>
+                            <a href="https://www.linkedin.com/in/satyabrata-panda-a462b5220" target="_blank"><img src="pictures/logo-linkedin.png" height="35px" width="35px"></a>
+                            <a href="https://twitter.com/__satyabrata__?t=-1RO9lrjYo8ZZPWj_jmoNg&s=08" target="_blank"><img src="pictures/x-twitter.png" height="35px" width="35px"></a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                             <a href="https://www.facebook.com/satyabrata.panda.3956690?mibextid=ZbWKwL" target="_blank"><img src="pictures/logo-facebook.png" height="35px" width="35px"></a>
                             <a href="https://www.instagram.com/satya.brata_panda/" target="_blank"><img src="pictures/logo-instagram.png" height="35px" width="35px"></a>
                             <a href="https://www.linkedin.com/in/satyabrata-panda-a462b5220" target="_blank"><img src="pictures/logo-linkedin.png" height="35px" width="35px"></a>
-                            <a href="https://twitter.com/__satyabrata__?t=-1RO9lrjYo8ZZPWj_jmoNg&s=08" target="_blank"><img src="pictures/logo-twitter.png" height="35px" width="35px"></a>
+                            <a href="https://twitter.com/__satyabrata__?t=-1RO9lrjYo8ZZPWj_jmoNg&s=08" target="_blank"><img src="pictures/x-twitter.png" height="35px" width="35px"></a>
                         </div>
                     </div>
                 </div>
